@@ -8,6 +8,6 @@
 import Foundation
 
 struct Subcomponent: Codable {
-    var amount: String
+    var amount: Int
     var part: Part
 }
