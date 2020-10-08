@@ -8,10 +8,9 @@ partRepository = PartRepository.mock_data()
 @app.route("/addPart", methods=["POST"])
 def addPart():
     jsonData = request.get_json()
-    print(json.dumps(jsonData))
     subcomponents = []
     for subcomponent in jsonData["subcomponents"]:
-        part = Part(str(uuid.uuid4()), subcomponent["part"]["name"], subcomponent["part"]["description"], subcomponent["part"]["subcomponents"])
+        part = Part(str(uuid.uuid4()), subcomponent["part"]["name"], subcomponent["part"]["description"], [])
         sub = Subcomponent(subcomponent["amount"], part)
         subcomponents.append(sub)
     part = Part(str(uuid.uuid4()), jsonData["name"], jsonData["description"], subcomponents)
@@ -20,8 +19,7 @@ def addPart():
 
 @app.route("/getList")
 def getList():
-    parts = partRepository.get_list()
-    print(json.dumps(parts, indent = 4))
+    parts = partRepository.get_list()\
     return jsonify(parts)
 
 @app.route("/getPart/<code>")

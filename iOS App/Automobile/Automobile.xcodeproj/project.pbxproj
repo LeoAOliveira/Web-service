@@ -17,6 +17,10 @@
 		A7A6ED7C252ED23A0082F000 /* Part.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A6ED7B252ED23A0082F000 /* Part.swift */; };
 		A7A6ED80252ED2B10082F000 /* Subcomponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A6ED7F252ED2B10082F000 /* Subcomponent.swift */; };
 		A7A6ED83252ED2D20082F000 /* PartRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A6ED82252ED2D20082F000 /* PartRepository.swift */; };
+		A7A6ED8A252EEF3E0082F000 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A6ED89252EEF3E0082F000 /* MainTableViewCell.swift */; };
+		A7A6ED8F252EF0B50082F000 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A6ED8E252EF0B50082F000 /* AddItemViewController.swift */; };
+		A7A6ED93252EF0EA0082F000 /* SearchItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A6ED92252EF0EA0082F000 /* SearchItemViewController.swift */; };
+		A7A6ED96252EF8B60082F000 /* SubcomponentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A6ED95252EF8B60082F000 /* SubcomponentsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		A7A6ED7B252ED23A0082F000 /* Part.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part.swift; sourceTree = "<group>"; };
 		A7A6ED7F252ED2B10082F000 /* Subcomponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subcomponent.swift; sourceTree = "<group>"; };
 		A7A6ED82252ED2D20082F000 /* PartRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartRepository.swift; sourceTree = "<group>"; };
+		A7A6ED89252EEF3E0082F000 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		A7A6ED8E252EF0B50082F000 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		A7A6ED92252EF0EA0082F000 /* SearchItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemViewController.swift; sourceTree = "<group>"; };
+		A7A6ED95252EF8B60082F000 /* SubcomponentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubcomponentsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +75,8 @@
 				A7A6ED62252ED1CE0082F000 /* AppDelegate.swift */,
 				A7A6ED64252ED1CE0082F000 /* SceneDelegate.swift */,
 				A7A6ED7A252ED22C0082F000 /* Model */,
-				A7A6ED66252ED1CF0082F000 /* ViewController.swift */,
+				A7A6ED8D252EF0900082F000 /* Controller */,
+				A7A6ED88252EEF150082F000 /* View */,
 				A7A6ED68252ED1CF0082F000 /* Main.storyboard */,
 				A7A6ED6B252ED1D10082F000 /* Assets.xcassets */,
 				A7A6ED6D252ED1D10082F000 /* LaunchScreen.storyboard */,
@@ -85,6 +94,25 @@
 				A7A6ED77252ED1FB0082F000 /* Request.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		A7A6ED88252EEF150082F000 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7A6ED89252EEF3E0082F000 /* MainTableViewCell.swift */,
+				A7A6ED95252EF8B60082F000 /* SubcomponentsTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A7A6ED8D252EF0900082F000 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A7A6ED66252ED1CF0082F000 /* ViewController.swift */,
+				A7A6ED8E252EF0B50082F000 /* AddItemViewController.swift */,
+				A7A6ED92252EF0EA0082F000 /* SearchItemViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,8 +187,12 @@
 			files = (
 				A7A6ED67252ED1CF0082F000 /* ViewController.swift in Sources */,
 				A7A6ED78252ED1FB0082F000 /* Request.swift in Sources */,
+				A7A6ED96252EF8B60082F000 /* SubcomponentsTableViewCell.swift in Sources */,
+				A7A6ED8A252EEF3E0082F000 /* MainTableViewCell.swift in Sources */,
 				A7A6ED63252ED1CE0082F000 /* AppDelegate.swift in Sources */,
 				A7A6ED7C252ED23A0082F000 /* Part.swift in Sources */,
+				A7A6ED93252EF0EA0082F000 /* SearchItemViewController.swift in Sources */,
+				A7A6ED8F252EF0B50082F000 /* AddItemViewController.swift in Sources */,
 				A7A6ED80252ED2B10082F000 /* Subcomponent.swift in Sources */,
 				A7A6ED65252ED1CE0082F000 /* SceneDelegate.swift in Sources */,
 				A7A6ED83252ED2D20082F000 /* PartRepository.swift in Sources */,
