@@ -8,16 +8,16 @@ class PartRepository:
         self.parts.append(part)
     
     def get_list(self):
-        parts_dictionary = []
+        partRepository = {
+            "parts": []
+        }
         for part in self.parts:
-            parts_dictionary.append(part.show())
-        return parts_dictionary
+            partRepository["parts"].append(part.show())
+        return partRepository
     
     def get_part(self, code):
         for part in self.parts:
-            print(type(part.code), type(code))
             if part.code == code:
-                print("!!!", part)
                 return part.show()
         return {}
 

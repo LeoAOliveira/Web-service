@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-import uuid
+import uuid, json
 from model import *
 app = Flask(__name__)
 
@@ -20,6 +20,7 @@ def addPart():
 @app.route("/getList")
 def getList():
     parts = partRepository.get_list()
+    print(json.dumps(parts, indent = 4))
     return jsonify(parts)
 
 @app.route("/getPart/<code>")
