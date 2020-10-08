@@ -19,7 +19,7 @@ def addPart():
 
 @app.route("/getList")
 def getList():
-    parts = partRepository.get_list()\
+    parts = partRepository.get_list()
     return jsonify(parts)
 
 @app.route("/getPart/<code>")

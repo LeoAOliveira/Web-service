@@ -253,7 +253,9 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="t1b-9e-xb3"/>
                                 </constraints>
-                                <state key="normal" title="Buscar"/>
+                                <state key="normal" title="Buscar">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                </state>
                                 <connections>
                                     <action selector="searchbuttonPressed:" destination="W7t-YI-eSW" eventType="touchUpInside" id="07a-yb-McT"/>
                                 </connections>
